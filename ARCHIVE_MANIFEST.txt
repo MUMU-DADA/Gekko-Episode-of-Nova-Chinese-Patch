@@ -1,0 +1,36 @@
+Gekko Episode of Nova Chinese Patch
+Archive date: 2026-08-28
+
+RUNTIME FILES (intentionally left in the game directory)
+----------------------------------------------------------
+BepInEx/core/                         BepInEx runtime libraries
+BepInEx/plugins/GekkoNovaPatch.dll   Runtime translation plugin
+BepInEx/plugins/GekkoNova_*.tsv      Runtime translation tables
+Gekko Episode of Nova.exe            Original game executable
+Gekko Episode of Nova_Data/          Original Unity data
+MonoBleedingEdge/                    Original Unity Mono runtime
+UnityPlayer.dll and related files    Original Unity runtime files
+
+ARCHIVED DEVELOPMENT FILES
+--------------------------
+Tools/                               Extraction, validation, build scripts and source
+TranslationWork/                     Candidate text and translation work files
+Installers/                          BepInEx x86/x64 zip packages
+BuildCache/                          Local build cache
+
+ARCHIVED RUNTIME PATCH
+----------------------
+RuntimePatch/                         Copy of GekkoNovaPatch.dll and all GekkoNova_*.tsv
+                                     (the live copy remains in BepInEx/plugins)
+
+RELEASE PACKAGE
+---------------
+Release/Gekko_Episode_of_Nova_Chinese_Patch_v0.1.0_x64.zip
+                                     Root-relative package for direct extraction into
+                                     a clean 64-bit game directory.
+
+VERIFICATION
+------------
+Build command: .\TranslationPatch_Archive\Tools\BuildPatch.ps1
+Result: Translation validation passed; GekkoNovaPatch.dll rebuilt successfully.
+Original game data was not moved or modified.
