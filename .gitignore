@@ -1,0 +1,16 @@
+# Local build and restore state
+BuildCache/
+Tools/obj/
+**/.dotnet_home/
+
+# Runtime-generated mod state
+**/LogOutput.log
+
+# Device/crash diagnostics
+*.trn
+*.dmp
+*.pdb
+
+# Local IDE/user state
+*.user
+*.suo
